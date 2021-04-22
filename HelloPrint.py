@@ -13,6 +13,9 @@ print("print chars using For loop: ")
 str = "python"
 for i in str:
     print(i)
+st1 = "Loop"
+for i in range (len(st1)):
+    print(st1[i])
 
 print("print chars using slicing: ")
 str1 = "count"
@@ -30,10 +33,15 @@ str2 = str1*3
 print("Replace a char: ", str2.replace('c','xx', 2), str2.replace('o', 'yy'), str2.replace('n',""))
 print("str1 and str2: ", str1+str2)
 
+str3 = "2345678"
+strToCharsList = list(str3)
+print(strToCharsList)
+
 text1 = "44count44 count44 strip5644 "
 print("Split a string: ", text1.split('44'))
 list1 = text1.split('44')
 print("Join list of strings to create new string: ", "---".join(list1).upper())
+
 
 dict1 = {'a':'123', 'b':"one", 'c':{"color":'red',"num":"456"}, 'd':True}
 print("print Dictionary", dict1)
