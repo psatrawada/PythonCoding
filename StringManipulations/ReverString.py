@@ -1,6 +1,7 @@
 #Reverse a string
 #input:  "HELLO World"
-#output:
+#output: dlroW olleH
+
 def rev(s):
     newstring = "";
     for i in s:
