@@ -1,8 +1,8 @@
 #Print repeated characeter from string
-#input:  "HELLO WORLD"
+#input:  "HELLOOO WORLD"
 #output: L, O
 def repeatChar(s):
-    repeats = {}
+    repeats = {} #empty dictionary
     for i in s:
         if i in repeats:
             repeats[i] += 1
@@ -10,12 +10,16 @@ def repeatChar(s):
             repeats[i] = 1
     return(repeats)
 
-S = "Hello World"
-#print("Repeated chars in a string: ", repeatChar(S) );
+def dupmaxchar(duplicates):
+    max = 0;
+    for k in duplicates:
+        if(duplicates[k] > max):
+            max = duplicates[k]
+            ch = k
+    return(ch, max)
+
+S = "Helloooo World"
+print("Repeated chars in a string: ", repeatChar(S) );
 duplicates = repeatChar(S)
-count = 0;
-for key,value in duplicates.items():
-    if(value > 1):
-        print(key, " ")
-        count +=1;
-#print("There are " , count, " duplicate chars")
+char,times = dupmaxchar(duplicates)
+print("Character ",char,"appeared max",times,  " times")

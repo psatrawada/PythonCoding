@@ -1,6 +1,6 @@
 #Product of List of integers
-#input:  [0,2,1,4,2,3]
-#output:
+#input:  [0,12,1,4,2,3,0]
+#output:26, 48
 
 def LargesProdOf2(nums):
     prod2 = nums[0]*nums[1]
